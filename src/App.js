@@ -1,5 +1,5 @@
-import React,{Component} from 'react';
-
+import React, { Component } from 'react';
+import { BrowserRouter, Link } from 'react-router-dom'
 import Main from './components/MainComponent'
 import './App.css';
 
@@ -10,9 +10,11 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <Main />
-      </div>
+      <BrowserRouter>
+        <div>
+          <Main />
+        </div>
+      </BrowserRouter>
     );
   }
 }
